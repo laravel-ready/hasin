@@ -5,6 +5,11 @@ namespace Illuminate\Database\Eloquent
     use Closure;
 
     if (false) {
+        /**
+         * Class Builder
+         * @package Illuminate\Database\Eloquent
+         * @mixin \Illuminate\Database\Eloquent\Builder
+         */
         class Builder
         {
             /**

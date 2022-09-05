@@ -18,7 +18,8 @@
         "phpunit/phpunit": "^9",
         "orchestra/testbench": "^7.7",
         "pestphp/pest": "^1.22",
-        "pestphp/pest-plugin-laravel": "^1.2"
+        "pestphp/pest-plugin-laravel": "^1.2",
+        "nunomaduro/larastan": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -39,6 +40,7 @@
         }
     },
     "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "format": "vendor/bin/pint"
     }
