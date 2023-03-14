@@ -11,14 +11,14 @@
         }
     ],
     "require": {
-        "laravel/framework": "^9"
+        "laravel/framework": "^10|^9"
     },
     "require-dev": {
-        "laravel/pint": "^1.1",
-        "phpunit/phpunit": "^9",
-        "orchestra/testbench": "^7.7",
+        "laravel/pint": "^v1.6",
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^v8.0",
         "pestphp/pest": "^1.22",
-        "pestphp/pest-plugin-laravel": "^1.2"
+        "pestphp/pest-plugin-laravel": "^v1.4"
     },
     "autoload": {
         "psr-4": {
