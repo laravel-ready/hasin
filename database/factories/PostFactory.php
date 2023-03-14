@@ -1,8 +1,8 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Factories;
+namespace LaravelReady\Hasin\Database\Factories;
 
-use BiiiiiigMonster\Hasin\Tests\Models\Post;
+use LaravelReady\Hasin\Tests\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PostFactory extends Factory

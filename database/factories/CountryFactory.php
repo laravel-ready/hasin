@@ -1,8 +1,8 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Factories;
+namespace LaravelReady\Hasin\Database\Factories;
 
-use BiiiiiigMonster\Hasin\Tests\Models\Country;
+use LaravelReady\Hasin\Tests\Models\Country;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CountryFactory extends Factory

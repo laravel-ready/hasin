@@ -1,7 +1,7 @@
 <?php
 
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('orWhereDoesntHaveIn same as orWhereDoesntHave', function () {
     $orWhereDoesntHave = User::where('age', '>', 18)->orWhereDoesntHave('posts', function ($query) {

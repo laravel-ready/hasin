@@ -1,6 +1,6 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Eloquent;
+namespace LaravelReady\Hasin\Database\Eloquent;
 
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
@@ -39,12 +39,12 @@ class RelationMixin
             $hasManyThrough = function (Builder $query, Builder $parentQuery, $columns = ['*']): Builder {
                 $columns = $columns == ['*'] ? $this->getQualifiedFirstKeyName() : $columns;
                 if ($parentQuery->getQuery()->from === $this->throughParent->getTable()) {
-                    $table = $this->throughParent->getTable().' as '.$hash = $this->getRelationCountHash();
+                    $table = $this->throughParent->getTable() . ' as ' . $hash = $this->getRelationCountHash();
 
-                    $query->join($table, $hash.'.'.$this->secondLocalKey, '=', $this->getQualifiedFarKeyName());
+                    $query->join($table, $hash . '.' . $this->secondLocalKey, '=', $this->getQualifiedFarKeyName());
 
                     if ($this->throughParentSoftDeletes()) {
-                        $query->whereNull($hash.'.'.$this->throughParent->getDeletedAtColumn());
+                        $query->whereNull($hash . '.' . $this->throughParent->getDeletedAtColumn());
                     }
 
                     return $query->select($columns);
@@ -64,7 +64,7 @@ class RelationMixin
                 ),
                 BelongsToMany::class => $belongsToMany($query, $parentQuery, $columns),
                 MorphToMany::class => $belongsToMany($query, $parentQuery, $columns)->where(
-                    $this->table.'.'.$this->morphType,
+                    $this->table . '.' . $this->morphType,
                     $this->morphClass
                 ),
                 HasOneThrough::class, HasManyThrough::class => $hasManyThrough($query, $parentQuery, $columns),

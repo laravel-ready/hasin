@@ -1,7 +1,7 @@
 <?php
 
-namespace Illuminate\Database\Eloquent
-{
+namespace Illuminate\Database\Eloquent {
+
     use Closure;
 
     if (false) {
@@ -19,7 +19,7 @@ namespace Illuminate\Database\Eloquent
              *
              * @throws \RuntimeException
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function hasIn($relation, $operator = '>=', $count = 1, $boolean = 'and', Closure $callback = null)
             {
@@ -34,7 +34,7 @@ namespace Illuminate\Database\Eloquent
              * @param  int  $count
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orHasIn($relation, $operator = '>=', $count = 1)
             {
@@ -49,7 +49,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function doesntHaveIn($relation, $boolean = 'and', Closure $callback = null)
             {
@@ -61,7 +61,7 @@ namespace Illuminate\Database\Eloquent
              *
              * @return Closure
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orDoesntHaveIn()
             {
@@ -77,7 +77,7 @@ namespace Illuminate\Database\Eloquent
              * @param  int  $count
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function whereHasIn($relation, Closure $callback = null, $operator = '>=', $count = 1)
             {
@@ -93,7 +93,7 @@ namespace Illuminate\Database\Eloquent
              * @param  int  $count
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orWhereHasIn($relation, Closure $callback = null, $operator = '>=', $count = 1)
             {
@@ -107,7 +107,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function whereDoesntHaveIn($relation, Closure $callback = null)
             {
@@ -121,7 +121,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orWhereDoesntHaveIn($relation, Closure $callback = null)
             {
@@ -139,7 +139,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function hasMorphIn($relation, $types, $operator = '>=', $count = 1, $boolean = 'and', Closure $callback = null)
             {
@@ -155,7 +155,7 @@ namespace Illuminate\Database\Eloquent
              * @param  int  $count
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orHasMorphIn($relation, $types, $operator = '>=', $count = 1)
             {
@@ -171,7 +171,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function doesntHaveMorphIn($relation, $types, $boolean = 'and', Closure $callback = null)
             {
@@ -185,7 +185,7 @@ namespace Illuminate\Database\Eloquent
              * @param  string|array  $types
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orDoesntHaveMorphIn($relation, $types)
             {
@@ -195,7 +195,7 @@ namespace Illuminate\Database\Eloquent
             /**
              * Add a polymorphic relationship count / whereIn condition to the query with where clauses.
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              *
              * @return Closure
              */
@@ -214,7 +214,7 @@ namespace Illuminate\Database\Eloquent
              * @param  int  $count
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orWhereHasMorphIn($relation, $types, Closure $callback = null, $operator = '>=', $count = 1)
             {
@@ -229,7 +229,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function whereDoesntHaveMorphIn($relation, $types, Closure $callback = null)
             {
@@ -244,7 +244,7 @@ namespace Illuminate\Database\Eloquent
              * @param  \Closure|null  $callback
              * @return \Illuminate\Database\Eloquent\Builder|static
              *
-             * @see \BiiiiiigMonster\Hasin\Database\Eloquent\BuilderMixin
+             * @see \LaravelReady\Hasin\Database\Eloquent\BuilderMixin
              */
             public function orWhereDoesntHaveMorphIn($relation, $types, Closure $callback = null)
             {

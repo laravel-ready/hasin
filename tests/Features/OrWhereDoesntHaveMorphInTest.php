@@ -1,7 +1,7 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\Comment;
-use BiiiiiigMonster\Hasin\Tests\Models\Post;
+use LaravelReady\Hasin\Tests\Models\Comment;
+use LaravelReady\Hasin\Tests\Models\Post;
 
 test('orWhereDoesntHaveMorphIn same as orWhereDoesntHaveMorph', function () {
     $orWhereDoesntHaveMorph = Comment::where('status', '>', 2)->orWhereDoesntHaveMorph('commentable', [Post::class], function ($query) {

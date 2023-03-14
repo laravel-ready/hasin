@@ -1,7 +1,7 @@
 <?php
 
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('orWhereHasIn same as orWhereHas', function () {
     $orWhereHas = User::where('age', '>', 18)->orWhereHas('posts', function ($query) {

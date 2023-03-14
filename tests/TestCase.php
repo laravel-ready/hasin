@@ -1,19 +1,19 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Tests;
+namespace LaravelReady\Hasin\Tests;
 
-use BiiiiiigMonster\Hasin\HasinServiceProvider;
-use BiiiiiigMonster\Hasin\Tests\Models\Comment;
-use BiiiiiigMonster\Hasin\Tests\Models\Country;
-use BiiiiiigMonster\Hasin\Tests\Models\History;
-use BiiiiiigMonster\Hasin\Tests\Models\Image;
-use BiiiiiigMonster\Hasin\Tests\Models\Phone;
-use BiiiiiigMonster\Hasin\Tests\Models\Post;
-use BiiiiiigMonster\Hasin\Tests\Models\Role;
-use BiiiiiigMonster\Hasin\Tests\Models\Supplier;
-use BiiiiiigMonster\Hasin\Tests\Models\Tag;
-use BiiiiiigMonster\Hasin\Tests\Models\User;
-use BiiiiiigMonster\Hasin\Tests\Models\Video;
+use LaravelReady\Hasin\HasinServiceProvider;
+use LaravelReady\Hasin\Tests\Models\Comment;
+use LaravelReady\Hasin\Tests\Models\Country;
+use LaravelReady\Hasin\Tests\Models\History;
+use LaravelReady\Hasin\Tests\Models\Image;
+use LaravelReady\Hasin\Tests\Models\Phone;
+use LaravelReady\Hasin\Tests\Models\Post;
+use LaravelReady\Hasin\Tests\Models\Role;
+use LaravelReady\Hasin\Tests\Models\Supplier;
+use LaravelReady\Hasin\Tests\Models\Tag;
+use LaravelReady\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\Video;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
@@ -79,9 +79,9 @@ class TestCase extends Orchestra
 
         Schema::defaultStringLength(191);
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'BiiiiiigMonster\\Hasin\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'LaravelReady\\Hasin\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
 
-        $this->migration = include __DIR__.'/../database/migrations/create_hasin_test_table.php';
+        $this->migration = include __DIR__ . '/../database/migrations/create_hasin_test_table.php';
     }
 }

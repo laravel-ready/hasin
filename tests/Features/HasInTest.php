@@ -1,6 +1,6 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('hasIn same as has', function () {
     $has = User::has('posts')->orderBy('id')->pluck('id');

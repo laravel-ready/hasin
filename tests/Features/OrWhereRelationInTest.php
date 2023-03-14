@@ -1,6 +1,6 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('orWhereRelationIn same as orWhereRelation', function () {
     $orWhereRelation = User::where('age', '>', 18)

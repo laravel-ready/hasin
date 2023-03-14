@@ -1,7 +1,7 @@
 <?php
 
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('orDoesntHaveIn same as orDoesntHave', function () {
     $orDoesntHave = User::where('age', '>', 18)->orDoesntHave('posts')->orderBy('id')->pluck('id');

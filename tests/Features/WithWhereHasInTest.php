@@ -1,7 +1,7 @@
 <?php
 
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('withWhereHasIn same as withWhereHas', function () {
     $whereHas = User::withWhereHas('posts', function ($query) {

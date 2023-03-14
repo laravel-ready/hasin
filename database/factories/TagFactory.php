@@ -1,8 +1,8 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Factories;
+namespace LaravelReady\Hasin\Database\Factories;
 
-use BiiiiiigMonster\Hasin\Tests\Models\Tag;
+use LaravelReady\Hasin\Tests\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TagFactory extends Factory

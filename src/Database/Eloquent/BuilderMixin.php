@@ -1,6 +1,6 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Eloquent;
+namespace LaravelReady\Hasin\Database\Eloquent;
 
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
@@ -35,8 +35,8 @@ class BuilderMixin
             // the subquery to only run a "where in" clause instead of this full "count"
             // clause. This will make these queries run much faster compared with a count.
             $method = $this->canUseExistsForExistenceCheck($operator, $count)
-                            ? 'getRelationExistenceInQuery'
-                            : 'getRelationExistenceCountQuery';
+                ? 'getRelationExistenceInQuery'
+                : 'getRelationExistenceCountQuery';
 
             $hasInQuery = $relation->{$method}(
                 $relation->getRelated()->newQueryWithoutRelationships(),

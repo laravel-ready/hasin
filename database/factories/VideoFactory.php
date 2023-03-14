@@ -1,8 +1,8 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Factories;
+namespace LaravelReady\Hasin\Database\Factories;
 
-use BiiiiiigMonster\Hasin\Tests\Models\Video;
+use LaravelReady\Hasin\Tests\Models\Video;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class VideoFactory extends Factory

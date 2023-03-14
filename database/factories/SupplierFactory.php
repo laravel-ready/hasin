@@ -1,8 +1,8 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Factories;
+namespace LaravelReady\Hasin\Database\Factories;
 
-use BiiiiiigMonster\Hasin\Tests\Models\Supplier;
+use LaravelReady\Hasin\Tests\Models\Supplier;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SupplierFactory extends Factory

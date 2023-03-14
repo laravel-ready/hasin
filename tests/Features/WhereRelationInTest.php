@@ -1,6 +1,6 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('whereRelationIn same as whereRelation', function () {
     $whereRelation = User::whereRelation('posts', 'title', 'like', '%code%')->orderBy('id')->pluck('id');

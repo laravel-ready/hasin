@@ -1,7 +1,7 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\Comment;
-use BiiiiiigMonster\Hasin\Tests\Models\Post;
+use LaravelReady\Hasin\Tests\Models\Comment;
+use LaravelReady\Hasin\Tests\Models\Post;
 
 test('whereHasMorphIn same as whereHasMorph', function () {
     $whereHasMorph = Comment::whereHasMorph('commentable', [Post::class], function ($query) {

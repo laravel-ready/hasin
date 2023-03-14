@@ -1,5 +1,5 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\TestCase;
+use LaravelReady\Hasin\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

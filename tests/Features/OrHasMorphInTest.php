@@ -1,7 +1,7 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\Comment;
-use BiiiiiigMonster\Hasin\Tests\Models\Post;
+use LaravelReady\Hasin\Tests\Models\Comment;
+use LaravelReady\Hasin\Tests\Models\Post;
 
 test('orHasMorphIn same as orHasMorph', function () {
     $orHasMorph = Comment::where('status', '>', 2)->orHasMorph('commentable', [Post::class])->orderBy('id')->pluck('id');

@@ -1,6 +1,6 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('orHasIn same as orHas', function () {
     $orHas = User::where('age', '>', 18)->orHas('posts')->orderBy('id')->pluck('id');

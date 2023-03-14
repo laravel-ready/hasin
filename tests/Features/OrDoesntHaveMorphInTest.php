@@ -1,7 +1,7 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\Comment;
-use BiiiiiigMonster\Hasin\Tests\Models\Post;
+use LaravelReady\Hasin\Tests\Models\Comment;
+use LaravelReady\Hasin\Tests\Models\Post;
 
 test('orDoesntHaveMorphIn same as orDoesntHaveMorph', function () {
     $orDoesntHaveMorph = Comment::where('status', '>', 2)->orDoesntHaveMorph('commentable', [Post::class])->orderBy('id')->pluck('id');

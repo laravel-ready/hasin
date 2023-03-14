@@ -1,6 +1,6 @@
 <?php
 
-use BiiiiiigMonster\Hasin\Tests\Models\User;
+use LaravelReady\Hasin\Tests\Models\User;
 
 test('doesntHaveIn same as doesntHave', function () {
     $doesntHave = User::doesntHave('posts')->orderBy('id')->pluck('id');

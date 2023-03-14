@@ -1,6 +1,6 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Tests\Models;
+namespace LaravelReady\Hasin\Tests\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

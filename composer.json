@@ -22,19 +22,19 @@
     },
     "autoload": {
         "psr-4": {
-            "BiiiiiigMonster\\Hasin\\": "src",
-            "BiiiiiigMonster\\Hasin\\Database\\Factories\\": "database/factories"
+            "LaravelReady\\Hasin\\": "src",
+            "LaravelReady\\Hasin\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BiiiiiigMonster\\Hasin\\Tests\\": "tests"
+            "LaravelReady\\Hasin\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BiiiiiigMonster\\Hasin\\HasinServiceProvider"
+                "LaravelReady\\Hasin\\HasinServiceProvider"
             ]
         }
     },

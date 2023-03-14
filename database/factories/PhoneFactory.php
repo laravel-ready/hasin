@@ -1,8 +1,8 @@
 <?php
 
-namespace BiiiiiigMonster\Hasin\Database\Factories;
+namespace LaravelReady\Hasin\Database\Factories;
 
-use BiiiiiigMonster\Hasin\Tests\Models\Phone;
+use LaravelReady\Hasin\Tests\Models\Phone;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PhoneFactory extends Factory
