@@ -5,9 +5,9 @@
 # LARAVEL HASIN
 
 <p>
-    <a href="https://github.com/biiiiiigmonster/hasin/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-7389D8.svg?style=flat" ></a>
-    <a href="https://github.com/biiiiiigmonster/hasin/releases" ><img src="https://img.shields.io/github/release/biiiiiigmonster/hasin.svg?color=4099DE" /></a> 
-    <a href="https://packagist.org/packages/biiiiiigmonster/hasin"><img src="https://img.shields.io/packagist/dt/biiiiiigmonster/hasin.svg?color=" /></a> 
+    <a href="https://github.com/laravel-ready/hasin/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-7389D8.svg?style=flat" ></a>
+    <a href="https://github.com/laravel-ready/hasin/releases" ><img src="https://img.shields.io/github/release/laravel-ready/hasin.svg?color=4099DE" /></a> 
+    <a href="https://packagist.org/packages/laravel-ready/hasin"><img src="https://img.shields.io/packagist/dt/laravel-ready/hasin.svg?color=" /></a> 
     <a><img src="https://img.shields.io/badge/php-8+-59a9f8.svg?style=flat" /></a> 
 </p>
 
@@ -19,8 +19,8 @@
 
 | Laravel 版本 | 安装命令 |
 | ---- | ---- |
-| Laravel 9 | ``` composer require biiiiiigmonster/hasin:^2.0 ``` |
-| Laravel 5.5 ~ 8 | ``` composer require biiiiiigmonster/hasin:^1.0 ``` |
+| Laravel 9 | ``` composer require laravel-ready/hasin:^2.0 ``` |
+| Laravel 5.5 ~ 8 | ``` composer require laravel-ready/hasin:^1.0 ``` |
 
 ## 简介
 

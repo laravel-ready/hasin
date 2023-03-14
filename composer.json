@@ -1,5 +1,5 @@
 {
-    "name": "biiiiiigmonster/hasin",
+    "name": "laravel-ready/hasin",
     "description": "Laravel framework relation has in implement",
     "type": "library",
     "keywords": ["laravel", "orm", "relation", "whereHas"],
