@@ -18,6 +18,8 @@ The `hasin` is composer package based on `where in` syntax to query the relation
 # Installation
 | Laravel Version | Install command |
 | ---- | ---- |
+| Laravel 11 | ``` composer require laravel-ready/hasin:^3.0 ``` |
+| Laravel 10 | ``` composer require laravel-ready/hasin:^2.1 ``` |
 | Laravel 9 | ``` composer require laravel-ready/hasin:^2.0 ``` |
 | Laravel 5.5 ~ 8 | ``` composer require laravel-ready/hasin:^1.0 ``` |
 
