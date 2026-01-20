@@ -2,28 +2,37 @@
   "name": "laravel-ready/hasin",
   "description": "Laravel framework relation has in implement",
   "type": "library",
+  "license": "MIT",
   "keywords": [
     "laravel",
     "orm",
     "relation",
     "whereHas"
   ],
-  "license": "MIT",
   "authors": [
     {
       "name": "YunFeng Lu",
       "email": "603707288@qq.com"
     }
   ],
+  "support": {
+    "issues": "https://github.com/laravel-ready/hasin/issues",
+    "source": "https://github.com/laravel-ready/hasin"
+  },
   "require": {
-    "laravel/framework": "v11.8.0"
+    "php": "^8.5 || ^8.4 || ^8.3 || ^8.2 || ^8.1",
+    "illuminate/support": "^12.4 || ^11.8 || ^10.0"
   },
   "require-dev": {
-    "laravel/pint": "v1.16.0",
-    "phpunit/phpunit": "^10.5.17",
-    "orchestra/testbench": "v9.1.0",
-    "pestphp/pest": "v2.34.7",
-    "pestphp/pest-plugin-laravel": "v2.4.0"
+    "larastan/larastan": "^2.9 || ^3.8",
+    "mockery/mockery": "^1.6",
+    "orchestra/testbench": "^8.0 || ^9.0 || ^10.0",
+    "pestphp/pest": "^2.0 || ^3.0 || ^4.1",
+    "pestphp/pest-plugin-laravel": "^2.0 || ^3.0 || ^4.0",
+    "phpstan/extension-installer": "^1.4",
+    "phpstan/phpstan": "^1.11 || ^2.1",
+    "phpstan/phpstan-deprecation-rules": "^1.2 || ^2.0",
+    "phpstan/phpstan-phpunit": "^1.4 || ^2.0"
   },
   "autoload": {
     "psr-4": {
@@ -36,6 +45,23 @@
       "LaravelReady\\Hasin\\Tests\\": "tests"
     }
   },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    }
+  },
+  "scripts": {
+    "lint": "php-cs-fixer fix -v",
+    "test:coverage": "@test  --coverage-php ./coverage/cov/default.cov",
+    "test:coverage:html": "@test  --coverage-html coverage/html/default",
+    "test": "vendor/bin/pest --colors=always --parallel",
+    "test:lint": "php-cs-fixer fix -v --dry-run",
+    "test:styles": "vendor/bin/phpstan analyse --ansi",
+    "test:styles:pro": "vendor/bin/phpstan analyse --pro --fix --watch"
+  },
   "extra": {
     "laravel": {
       "providers": [
@@ -43,14 +69,6 @@
       ]
     }
   },
-  "scripts": {
-    "test": "vendor/bin/pest",
-    "format": "vendor/bin/pint"
-  },
-  "config": {
-    "sort-packages": true,
-    "allow-plugins": true
-  },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true
 }
