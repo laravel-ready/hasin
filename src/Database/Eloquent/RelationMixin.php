@@ -79,7 +79,7 @@ class RelationMixin
 
     public function getRelationWhereInKey(): Closure
     {
-        return fn (): string => match ($this::class) {
+        return fn(): string => match ($this::class) {
             BelongsTo::class, MorphTo::class => $this->getQualifiedForeignKeyName(),
             HasOne::class, HasMany::class, BelongsToMany::class,
             MorphMany::class, MorphOne::class, MorphToMany::class => $this->getQualifiedParentKeyName(),

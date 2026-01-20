@@ -15,7 +15,8 @@ test('whereDoesntHaveIn same as whereDoesntHave', function () {
 
 test('nested whereDoesntHaveIn same as nested whereDoesntHave', function () {
     $whereDoesntHave = User::whereDoesntHave('posts.comments', function ($query) {
-        $query->where('status', '>', 2);;
+        $query->where('status', '>', 2);
+        ;
     })->orderBy('id')->pluck('id');
     $whereDoesntHaveIn = User::whereDoesntHaveIn('posts.comments', function ($query) {
         $query->where('status', '>', 2);

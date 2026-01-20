@@ -17,7 +17,7 @@ class HistoryFactory extends Factory
     public function definition()
     {
         return [
-            'content' => $this->faker->address
+            'content' => $this->faker->address,
         ];
     }
 }

@@ -157,7 +157,7 @@ class BuilderMixin
         return function ($relation, Closure $callback = null, $operator = '>=', $count = 1): Builder {
             /** @var Builder $this */
             return $this->whereHasIn(Str::before($relation, ':'), $callback, $operator, $count)
-                ->with($callback ? [$relation => fn ($query) => $callback($query)] : $relation);
+                ->with($callback ? [$relation => fn($query) => $callback($query)] : $relation);
         };
     }
 

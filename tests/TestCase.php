@@ -52,12 +52,12 @@ class TestCase extends Orchestra
             ->has(Phone::factory())
             ->has(Image::factory(3))
             ->hasAttached($roles->random(5))
-            ->sequence(fn () => ['country_id' => $countries->pluck('id')->random()])
-            ->sequence(fn () => ['supplier_id' => $suppliers->pluck('id')->random()])
+            ->sequence(fn() => ['country_id' => $countries->pluck('id')->random()])
+            ->sequence(fn() => ['supplier_id' => $suppliers->pluck('id')->random()])
             ->create();
 
         $posts = Post::factory(15)
-            ->sequence(fn () => ['user_id' => $users->pluck('id')->random()])
+            ->sequence(fn() => ['user_id' => $users->pluck('id')->random()])
             ->hasAttached($tags->random(15))
             ->create();
 
@@ -79,7 +79,7 @@ class TestCase extends Orchestra
 
         Schema::defaultStringLength(191);
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'LaravelReady\\Hasin\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn(string $modelName) => 'LaravelReady\\Hasin\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
 
         $this->migration = include __DIR__ . '/../database/migrations/create_hasin_test_table.php';
