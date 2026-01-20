@@ -1,5 +1,6 @@
 # Laravel hasIn
 
+[![Packagist Version](https://img.shields.io/packagist/v/laravel-ready/hasin.svg?color=4099DE)](https://packagist.org/packages/laravel-ready/hasin)
 [![License](https://img.shields.io/badge/license-MIT-7389D8.svg?style=flat)](https://github.com/laravel-ready/hasin/blob/master/LICENSE)
 [![Release](https://img.shields.io/github/release/laravel-ready/hasin.svg?color=4099DE)](https://github.com/laravel-ready/hasin/releases)
 [![Downloads](https://img.shields.io/packagist/dt/laravel-ready/hasin.svg?color=)](https://packagist.org/packages/laravel-ready/hasin)
