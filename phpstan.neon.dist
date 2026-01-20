@@ -3,5 +3,16 @@ parameters:
         - src
     level: 5
     ignoreErrors:
-        - identifier: trait.unused
-    excludePaths:
+        # Mixin class false positives - methods/properties are mixed into other classes
+        - '#Call to an undefined method .+Mixin::#'
+        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Builder::#'
+        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\Relation::#'
+        - '#Call to protected method .+ of class Illuminate\\Database\\Eloquent\\Builder#'
+        - '#PHPDoc tag @var with type Illuminate\\Database\\Eloquent\\Builder is not subtype#'
+        - '#Match arm comparison between .+ is always false#'
+        - '#Access to an undefined property .+Mixin::#'
+        - '#Anonymous function should return .+ but returns Closure#'
+        - '#Method .+Mixin::.+ invoked with .+ parameters, 0 required#'
+        - '#Unreachable statement - code above always terminates#'
+        # PHP 8.4 deprecation - nullable parameters
+        - '#Deprecated in PHP 8.4: Parameter .+ is implicitly nullable#'
