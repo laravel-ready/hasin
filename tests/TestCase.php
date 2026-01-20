@@ -75,7 +75,12 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.connections.mysql.prefix', 'hasin_test_');
+        config()->set('database.default', 'testing');
+        config()->set('database.connections.testing', [
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => '',
+        ]);
 
         Schema::defaultStringLength(191);
         Factory::guessFactoryNamesUsing(
